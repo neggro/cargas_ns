@@ -1,0 +1,15 @@
+<RadSideDrawer #drawer>
+
+    <StackLayout class="sideStackLayout" *drawerSide>
+        <app-menu></app-menu>
+    </StackLayout>
+
+    <StackLayout *drawerMain #drawerMainContent>
+        <ActionBar title="Overview"></ActionBar>
+        <StackLayout class="contentStackLayout">
+            <label text="This is the overview page"></label>
+            <Button text="Open Drawer" (tap)="openDrawer()"></Button>
+        </StackLayout>
+    </StackLayout>
+
+</RadSideDrawer>

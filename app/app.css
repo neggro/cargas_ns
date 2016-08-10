@@ -1,0 +1,41 @@
+@import url('~/platform.css');
+
+Page {
+    /*background-color: transparent;*/
+    font-size: 15;
+}
+
+.dynamic-background {
+    background-image: url('res://n_3');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ActionBar {
+    background-color: transparent;
+    color: white;
+}
+
+TextField {
+    padding: 10;
+    font-size: 13;
+}
+
+RadSideDrawer {
+    margin-top: -56px;
+    z-index: 99;
+}
+
+.contentStackLayout {
+    /* fix above margin-top of entire RadSideDrawer */
+    margin-top: 56px;
+}
+
+.sideLabel {
+    padding: 10;
+}
+
+.sideStackLayout {
+    background-color: #ffffff;
+}
