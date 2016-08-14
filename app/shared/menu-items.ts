@@ -2,30 +2,42 @@
 export const MenuItems = [
     {
         text: 'Overview',
-        page: ''
+        page: '',
+        cssClass: 'side-overview'
     },
     {
         text: 'Vehicles',
-        page: '/vehicles'
+        page: '/vehicles',
+        cssClass: 'side-vehicles'
     },
     {
         text: 'Refuels',
-        page: '/refuels'
+        page: '/refuels',
+        cssClass: 'side-refuels'
     },
     {
         text: 'Stats',
-        page: '/stats'
+        page: '/stats',
+        cssClass: 'side-stats'
     },
     {
         text: 'Settings',
-        page: '/settings'
+        page: '/settings',
+        cssClass: 'side-settings'
+    },
+    {
+        text: 'Share',
+        page: 'share',
+        cssClass: 'side-share'
     },
     {
         text: 'Contact Us',
-        page: '/contact-us'
+        page: 'contact-us',
+        cssClass: 'side-contactus'
     },
     {
         text: 'Profile',
-        page: '/profile'
+        page: '/profile',
+        cssClass: 'side-profile'
     }
 ];

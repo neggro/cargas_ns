@@ -1,8 +1,8 @@
 @import url('~/platform.css');
 
 Page {
-    /*background-color: transparent;*/
-    font-size: 15;
+    /*font-size: 15;*/
+    color: #333;
 }
 
 .dynamic-background {
@@ -13,8 +13,14 @@ Page {
 }
 
 ActionBar {
-    background-color: transparent;
-    color: white;
+    background-color: rgba(33, 33, 33, 0.2);
+    color: #fff;
+    /* size of the notification bar */
+    margin-top: 24;
+}
+
+NavigationButton {
+    color: #fff;
 }
 
 TextField {
@@ -23,19 +29,69 @@ TextField {
 }
 
 RadSideDrawer {
-    margin-top: -56px;
+    margin-top: -81;
     z-index: 99;
+}
+
+.sideStackLayout {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* size of the notification bar + 5 */
+    padding-top: 30;
+}
+
+/*.sideMenuStackLayout {}*/
+
+.side-label {
+    font-weight: bold;
+    padding: 14 20 14 55;
+
+    background-repeat: no-repeat;
+    background-position: 38 30;
+}
+
+.side-overview {
+    background-image: url('res://ic_web_black_24dp');
+}
+
+.side-vehicles {
+    background-image: url('res://ic_directions_car_black_24dp');
+}
+
+.side-refuels {
+    background-image: url('res://ic_local_gas_station_black_24dp');
+}
+
+.side-stats {
+    background-image: url('res://ic_insert_chart_black_24dp');
+}
+
+.side-settings {
+    background-image: url('res://ic_settings_black_24dp');
+}
+
+.side-share {
+    background-image: url('res://ic_share_black_24dp');
+}
+
+.side-contactus {
+    background-image: url('res://ic_mail_black_24dp');
+}
+
+.side-profile {
+    background-image: url('res://ic_person_black_24dp');
 }
 
 .contentStackLayout {
     /* fix above margin-top of entire RadSideDrawer */
-    margin-top: 56px;
-}
-
-.sideLabel {
+    margin-top: 81;
     padding: 10;
 }
 
-.sideStackLayout {
-    background-color: #ffffff;
+.overview-container,
+.vehicles-content {
+    border-radius: 8;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10;
+
+    min-height: 400;
 }

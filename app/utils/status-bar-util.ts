@@ -33,7 +33,7 @@ export function setStatusBarColors() {
             if (application.android && platform.device.sdkVersion >= '21') {
                 let View = android.view.View;
                 let window = application.android.startActivity.getWindow();
-                window.setStatusBarColor(0x000000);
+                window.setStatusBarColor(0x33000000);
 
                 let decorView = window.getDecorView();
                 decorView.setSystemUiVisibility(
