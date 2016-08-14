@@ -6,7 +6,7 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "noEmitHelpers": true,
-        "noEmitOnError": true,
+        "noEmitOnError": false,
         "outDir": "app/build"
     },
     "exclude": [

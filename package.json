@@ -4,7 +4,10 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.cargasns22"
+    "id": "org.nativescript.cargasns22",
+    "tns-android": {
+      "version": "2.2.0"
+    }
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.4",
@@ -18,10 +21,15 @@
     "@angular/router-deprecated": "2.0.0-rc.2",
     "nativescript-angular": "^0.3.0",
     "nativescript-social-share": "^1.2.0",
+    "nativescript-telerik-ui": "^1.2.0",
     "reflect-metadata": "^0.1.5",
     "tns-core-modules": "2.2.0"
   },
   "devDependencies": {
+    "babel-traverse": "6.13.0",
+    "babel-types": "6.13.0",
+    "babylon": "6.8.4",
+    "lazy": "1.0.11",
     "nativescript-dev-typescript": "^0.3.2",
     "typescript": "^1.8.10"
   }
