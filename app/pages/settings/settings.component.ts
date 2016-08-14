@@ -16,13 +16,13 @@ import {
 } from 'ui/page';
 
 @Component({
-    selector: 'overview',
-    templateUrl: 'pages/overview/overview.html',
+    selector: 'settings',
+    templateUrl: 'pages/settings/settings.html',
     directives: [AppMenuComponent]
 })
-export class OverviewComponent extends BasePage {
+export class SettingsComponent extends BasePage {
 
-    public title:String = 'Overview';
+    public title:String = 'Settings';
 
     constructor(_changeDetectionRef: ChangeDetectorRef, _page: Page) {
         super(_changeDetectionRef, _page);

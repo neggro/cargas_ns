@@ -5,10 +5,14 @@
     </StackLayout>
 
     <StackLayout *drawerMain #drawerMainContent>
-        <ActionBar title="Overview"></ActionBar>
+        <ActionBar title="{{title}}">
+            <NavigationButton (tap)="openDrawer()" ios.systemIcon="9" icon="res://ic_menu_white_24dp"></NavigationButton>
+        </ActionBar>
         <StackLayout class="contentStackLayout">
-            <label text="This is the overview page"></label>
-            <Button text="Open Drawer" (tap)="openDrawer()"></Button>
+            <StackLayout class="overview-container">
+                <Label text="Last Refuel"></Label>
+                <Label text="Content goes here"></Label>
+            </StackLayout>
         </StackLayout>
     </StackLayout>
 

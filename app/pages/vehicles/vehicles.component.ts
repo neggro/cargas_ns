@@ -22,6 +22,8 @@ import {
 })
 export class VehiclesComponent extends BasePage {
 
+    public title:String = 'Vehicles';
+
     constructor(_changeDetectionRef: ChangeDetectorRef, _page: Page) {
         super(_changeDetectionRef, _page);
     }
