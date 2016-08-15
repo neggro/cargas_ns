@@ -3,7 +3,7 @@ import {
 } from '@angular/core';
 
 import {
-    MenuItems
+    MENU_ITEMS
 } from '../shared/menu-items';
 
 import {
@@ -46,6 +46,6 @@ export class AppMenuComponent {
     }
 
     constructor(private _router: RouterExtensions) {
-        this.menuItems = MenuItems;
+        this.menuItems = MENU_ITEMS;
     }
 }

@@ -1,5 +1,5 @@
 // exports the left menu items of the app (text and page URL, maybe more props in the future)
-export const MenuItems = [
+export const MENU_ITEMS = [
     {
         text: 'Overview',
         page: '',

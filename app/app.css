@@ -6,10 +6,66 @@ Page {
 }
 
 .dynamic-background {
-    background-image: url('res://n_3');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.n-0 {
+    background-image: url('res://n_0');
+}
+
+.n-1 {
+    background-image: url('res://n_1');
+}
+
+.n-2 {
+    background-image: url('res://n_2');
+}
+
+.n-3 {
+    background-image: url('res://n_3');
+}
+
+.n-4 {
+    background-image: url('res://n_4');
+}
+
+.n-5 {
+    background-image: url('res://n_5');
+}
+
+.n-6 {
+
+    background-image: url('res://n_6');
+}
+
+.d-0 {
+    background-image: url('res://d_0');
+}
+
+.d-1 {
+    background-image: url('res://d_1');
+}
+
+.d-2 {
+    background-image: url('res://d_2');
+}
+
+.d-3 {
+    background-image: url('res://d_3');
+}
+
+.d-4 {
+    background-image: url('res://d_4');
+}
+
+.d-5 {
+    background-image: url('res://d_5');
+}
+
+.d-6 {
+    background-image: url('res://d_6');
 }
 
 ActionBar {
@@ -36,7 +92,7 @@ RadSideDrawer {
 .sideStackLayout {
     background-color: rgba(255, 255, 255, 0.9);
     /* size of the notification bar + 5 */
-    padding-top: 30;
+    padding-top: 29;
 }
 
 /*.sideMenuStackLayout {}*/
@@ -93,5 +149,5 @@ RadSideDrawer {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10;
 
-    min-height: 400;
+    min-height: 500;
 }

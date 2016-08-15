@@ -13,6 +13,10 @@ import {
     Page
 } from 'ui/page';
 
+import {
+    utils
+} from '../utils/Utils';
+
 export class BasePage implements OnInit {
 
     @ViewChild(RadSideDrawerComponent) private drawerComponent: RadSideDrawerComponent;
@@ -34,6 +38,6 @@ export class BasePage implements OnInit {
     }
 
     ngOnInit() {
-        this._page.className = 'dynamic-background';
+        this._page.className = 'dynamic-background ' + utils.getBackgroundClass();
     }
 }
