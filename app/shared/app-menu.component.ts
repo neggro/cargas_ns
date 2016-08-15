@@ -10,6 +10,8 @@ import {
     RouterExtensions
 } from 'nativescript-angular/router/router-extensions';
 
+import * as SocialShare from 'nativescript-social-share';
+
 @Component({
     selector: 'app-menu',
     template: `
@@ -31,7 +33,7 @@ export class AppMenuComponent {
 
         if (path === 'share') {
 
-            alert('Share this app');
+            SocialShare.shareText('https://play.google.com/store/apps/details?id=com.nicomontesdeoca.cargas');
 
         } else if (path === 'contact-us') {
 
