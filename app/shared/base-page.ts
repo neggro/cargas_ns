@@ -14,7 +14,7 @@ import {
 } from 'ui/page';
 
 import {
-    utils
+    Utils
 } from '../utils/Utils';
 
 export class BasePage implements OnInit {
@@ -38,6 +38,6 @@ export class BasePage implements OnInit {
     }
 
     ngOnInit() {
-        this._page.className = 'dynamic-background ' + utils.getBackgroundClass();
+        this._page.className = 'dynamic-background ' + Utils.getBackgroundClass();
     }
 }
