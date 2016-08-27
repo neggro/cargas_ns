@@ -1,3 +1,6 @@
+import * as application from 'application';
+import * as platform from 'platform';
+
 export class Utils {
 
     private static isNight () {
@@ -8,5 +11,12 @@ export class Utils {
     static getBackgroundClass() {
         let className = this.isNight() ? 'n-' : 'd-';
         return className + new Date().getDay();
+    }
+
+    static isAndroidOldSDK() {
+        if (application.android && platform.device.sdkVersion < '21') {
+            return true;
+        }
+        return false;
     }
 }
