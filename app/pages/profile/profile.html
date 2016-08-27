@@ -5,13 +5,41 @@
     </StackLayout>
 
     <StackLayout *drawerMain #drawerMainContent>
-        <ActionBar title="{{title}}">
+        <ActionBar title="{{title | translate}}">
             <NavigationButton (tap)="openDrawer()" ios.systemIcon="9" icon="res://ic_menu_white_24dp"></NavigationButton>
         </ActionBar>
-        <StackLayout class="contentStackLayout">
-            <StackLayout>
-                <label text="This is the {{title}} page"></label>
-            </StackLayout>
+        <StackLayout class="contentStackLayoutWrapper">
+            <ScrollView>
+                <StackLayout class="contentStackLayout">
+
+                    <StackLayout class="profile-container">
+                        <label [text]="'FIRST_NAME' | translate" class="form-label"></label>
+                        <textfield text="" class="form-text" returnKeyType="next"></textfield>
+
+                        <label [text]="'LAST_NAME' | translate" class="form-label"></label>
+                        <textfield text="" class="form-text" returnKeyType="next"></textfield>
+
+                        <label [text]="'EMAIL' | translate" class="form-label"></label>
+                        <textfield text="" class="form-text" returnKeyType="next" keyboardType="email" autocorrect="false"></textfield>
+
+                        <label [text]="'PASSWORD' | translate" class="form-label"></label>
+                        <textfield text="" class="form-text" secure="true" returnKeyType="done"></textfield>
+                    </StackLayout>
+
+                    <button text="Sign Up" class="success-btn"></button>
+
+                    <StackLayout class="profile-container second-container">
+                        <label [text]="'EMAIL' | translate" class="form-label"></label>
+                        <textfield text="" class="form-text" returnKeyType="next" keyboardType="email" autocorrect="false"></textfield>
+
+                        <label [text]="'PASSWORD' | translate" class="form-label"></label>
+                        <textfield text="" class="form-text" secure="true" returnKeyType="done"></textfield>
+                    </StackLayout>
+
+                    <button text="Sign In" class="success-btn"></button>
+
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </StackLayout>
 

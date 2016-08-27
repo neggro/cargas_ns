@@ -5,11 +5,19 @@
     </StackLayout>
 
     <StackLayout *drawerMain #drawerMainContent>
-        <ActionBar title="{{title}}">
+        <ActionBar title="{{title | translate}}">
             <NavigationButton (tap)="openDrawer()" ios.systemIcon="9" icon="res://ic_menu_white_24dp"></NavigationButton>
         </ActionBar>
-        <StackLayout class="contentStackLayout">
-            <label text="This is the {{title}} page"></label>
+        <StackLayout class="contentStackLayoutWrapper">
+            <ScrollView>
+
+                <StackLayout class="contentStackLayout">
+                    <StackLayout class="stats-container">
+                        <label text="This is the {{title | translate}} page"></label>
+                    </StackLayout>
+                </StackLayout>
+
+            </ScrollView>
         </StackLayout>
     </StackLayout>
 

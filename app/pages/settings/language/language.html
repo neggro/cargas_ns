@@ -1,0 +1,16 @@
+<ActionBar title="{{title | translate}}">
+    <NavigationButton (tap)="goBack()" ios.systemIcon="9" icon="res://ic_menu_white_24dp"></NavigationButton>
+</ActionBar>
+<!-- StackLayout class="contentStackLayoutWrapper" -->
+    <StackLayout class="contentStackLayout">
+
+        <ListView [items]="availableLaguages" (itemTap)="changeLanguage($event)" class="settings-container">
+            <template let-item="item">
+                <StackLayout>
+                    <Label text="{{item.text | translate}}"></Label>
+                </StackLayout>
+            </template>
+        </ListView>
+
+    </StackLayout>
+<!-- /StackLayout -->

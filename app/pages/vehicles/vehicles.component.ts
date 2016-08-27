@@ -15,14 +15,19 @@ import {
     Page
 } from 'ui/page';
 
+import {
+    TranslatePipe
+} from 'ng2-translate/ng2-translate';
+
 @Component({
     selector: 'vehicles',
     templateUrl: 'pages/vehicles/vehicles.html',
-    directives: [AppMenuComponent]
+    directives: [AppMenuComponent],
+    pipes: [TranslatePipe]
 })
 export class VehiclesComponent extends BasePage {
 
-    public title:String = 'Vehicles';
+    public title:String = 'VEHICLES';
 
     constructor(_changeDetectionRef: ChangeDetectorRef, _page: Page) {
         super(_changeDetectionRef, _page);

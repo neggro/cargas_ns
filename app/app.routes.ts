@@ -23,6 +23,10 @@ import {
 } from './pages/settings/settings.component';
 
 import {
+    LanguageComponent
+} from './pages/settings/language/language.component';
+
+import {
     StatsComponent
 } from './pages/stats/stats.component';
 
@@ -42,6 +46,9 @@ export const routes: RouterConfig = [{
 }, {
     path: 'settings',
     component: SettingsComponent
+}, {
+    path: 'language',
+    component: LanguageComponent
 }, {
     path: 'stats',
     component: StatsComponent
