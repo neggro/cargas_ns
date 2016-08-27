@@ -39,5 +39,9 @@ export class BasePage implements OnInit {
 
     ngOnInit() {
         this._page.className = 'dynamic-background ' + Utils.getBackgroundClass();
+
+        if (Utils.isAndroidOldSDK()) {
+            this._page.className = this._page.className + ' old-sdk';
+        }
     }
 }

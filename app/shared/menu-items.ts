@@ -1,42 +1,42 @@
 // exports the left menu items of the app (text and page URL, maybe more props in the future)
 export const MENU_ITEMS = [
     {
-        text: 'Overview',
+        text: 'OVERVIEW',
         page: '',
         cssClass: 'side-overview'
     },
     {
-        text: 'Vehicles',
+        text: 'VEHICLES',
         page: '/vehicles',
         cssClass: 'side-vehicles'
     },
     {
-        text: 'Refuels',
+        text: 'REFUELS',
         page: '/refuels',
         cssClass: 'side-refuels'
     },
     {
-        text: 'Stats',
+        text: 'STATS',
         page: '/stats',
         cssClass: 'side-stats'
     },
     {
-        text: 'Settings',
+        text: 'SETTINGS',
         page: '/settings',
         cssClass: 'side-settings'
     },
     {
-        text: 'Share',
+        text: 'SHARE',
         page: 'share',
         cssClass: 'side-share'
     },
     {
-        text: 'Contact Us',
+        text: 'CONTACT_US',
         page: 'contact-us',
         cssClass: 'side-contactus'
     },
     {
-        text: 'Profile',
+        text: 'PROFILE',
         page: '/profile',
         cssClass: 'side-profile'
     }

@@ -30,7 +30,7 @@ export function setStatusBarColors() {
     // for details on the technique used.
     if (application.android) {
         application.android.onActivityStarted = function() {
-            if (application.android && platform.device.sdkVersion >= '21') {
+            if (platform.device.sdkVersion >= '21') {
                 let View = android.view.View;
                 let window = application.android.startActivity.getWindow();
                 window.setStatusBarColor(0x33000000);
