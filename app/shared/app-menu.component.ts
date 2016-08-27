@@ -12,6 +12,10 @@ import {
 
 import * as SocialShare from 'nativescript-social-share';
 
+import {
+    TranslatePipe
+} from 'ng2-translate/ng2-translate';
+
 @Component({
     selector: 'app-menu',
     template: `
@@ -20,10 +24,11 @@ import * as SocialShare from 'nativescript-social-share';
         </StackLayout -->
 
         <StackLayout class="sideMenuStackLayout">
-            <Label *ngFor="let item of menuItems" text="{{item.text}}" class="side-label {{item.cssClass}}"
+            <Label *ngFor="let item of menuItems" text="{{item.text | translate}}" class="side-label {{item.cssClass}}"
                 (tap)="navigateTo(item.page)"></Label>
         </StackLayout>
-    `
+    `,
+    pipes: [TranslatePipe]
 })
 export class AppMenuComponent {
 
