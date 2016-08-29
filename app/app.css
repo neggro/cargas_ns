@@ -5,9 +5,10 @@ Page {
     color: #333;
 }
 
-/*StackLayout {
-    height: auto;
-}*/
+.icon {
+   font-family: 'MaterialIcons';
+   font-size: 24;
+}
 
 .dynamic-background {
     background-repeat: no-repeat;
@@ -79,8 +80,6 @@ ActionBar {
     color: #fff;
     /* size of the notification bar */
     margin-top: 24;
-    /* in android 4 action bar is over the menu */
-    z-index: 1;
 }
 
 Page.old-sdk ActionBar {
@@ -98,7 +97,7 @@ TextField {
 
 RadSideDrawer {
     margin-top: -81;
-    /*z-index: 99;*/
+    z-index: 99;
 }
 
 .sideStackLayout {
@@ -106,7 +105,7 @@ RadSideDrawer {
     /* size of the notification bar + 5 */
     padding-top: 29;
     /* in android 4 action bar is over the menu */
-    z-index: 2;
+    z-index: 100;
 }
 
 /*.sideMenuStackLayout {}*/
@@ -119,36 +118,27 @@ RadSideDrawer {
     background-position: 38 30;
 }
 
-.side-overview {
-    background-image: url('res://ic_web_black_24dp');
+.sideMenuStackLayout {
+    font-size: 14;
 }
 
-.side-vehicles {
-    background-image: url('res://ic_directions_car_black_24dp');
+.sideMenuStackLayout GridLayout {
+    height: 48;
+    /*border-width: 1;
+    border-color: #999999;*/
 }
 
-.side-refuels {
-    background-image: url('res://ic_local_gas_station_black_24dp');
+.sideMenuStackLayout .icon {
+    color: rgba(0, 0, 0, .54);
+    margin-left: 16;
+    vertical-align: center;
 }
 
-.side-stats {
-    background-image: url('res://ic_insert_chart_black_24dp');
-}
-
-.side-settings {
-    background-image: url('res://ic_settings_black_24dp');
-}
-
-.side-share {
-    background-image: url('res://ic_share_black_24dp');
-}
-
-.side-contactus {
-    background-image: url('res://ic_mail_black_24dp');
-}
-
-.side-profile {
-    background-image: url('res://ic_person_black_24dp');
+.sideMenuStackLayout .text {
+    color: rgba(0, 0, 0, .87);
+    margin-left: 72;
+    /*padding-top: 4;*/
+    vertical-align: center;
 }
 
 .contentStackLayout {

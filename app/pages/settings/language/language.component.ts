@@ -37,6 +37,8 @@ export class LanguageComponent implements OnInit {
 
     public title:String = 'LANGUAGE';
 
+    // public backIcon = String.fromCharCode(0xE5C4);
+
     public availableLaguages:languageObject[];
 
     public goBack() {

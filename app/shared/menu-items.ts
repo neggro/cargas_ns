@@ -3,41 +3,41 @@ export const MENU_ITEMS = [
     {
         text: 'OVERVIEW',
         page: '',
-        cssClass: 'side-overview'
+        icon: String.fromCharCode(0xE051)
     },
     {
         text: 'VEHICLES',
         page: '/vehicles',
-        cssClass: 'side-vehicles'
+        icon: String.fromCharCode(0xE531)
     },
     {
         text: 'REFUELS',
         page: '/refuels',
-        cssClass: 'side-refuels'
+        icon: String.fromCharCode(0xE546)
     },
     {
         text: 'STATS',
         page: '/stats',
-        cssClass: 'side-stats'
+        icon: String.fromCharCode(0xE24B)
     },
     {
         text: 'SETTINGS',
         page: '/settings',
-        cssClass: 'side-settings'
+        icon: String.fromCharCode(0xE8B8)
     },
     {
         text: 'SHARE',
         page: 'share',
-        cssClass: 'side-share'
+        icon: String.fromCharCode(0xE80D)
     },
     {
         text: 'CONTACT_US',
         page: 'contact-us',
-        cssClass: 'side-contactus'
+        icon: String.fromCharCode(0xE158)
     },
     {
         text: 'PROFILE',
         page: '/profile',
-        cssClass: 'side-profile'
+        icon: String.fromCharCode(0xE7FD)
     }
 ];

@@ -24,8 +24,14 @@ import {
         </StackLayout -->
 
         <StackLayout class="sideMenuStackLayout">
-            <Label *ngFor="let item of menuItems" text="{{item.text | translate}}" class="side-label {{item.cssClass}}"
-                (tap)="navigateTo(item.page)"></Label>
+            <ScrollView>
+                <StackLayout>
+                    <GridLayout *ngFor="let item of menuItems" (tap)="navigateTo(item.page)">
+                        <Label text="{{item.icon}}" class="icon"></Label>
+                        <Label text="{{item.text | translate}}" class="text"></Label>
+                    </GridLayout>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     `,
     pipes: [TranslatePipe]
