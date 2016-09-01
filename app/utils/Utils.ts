@@ -1,6 +1,8 @@
 import * as application from 'application';
 import * as platform from 'platform';
 
+declare let android: any;
+
 export class Utils {
 
     private static isNight () {
@@ -16,6 +18,14 @@ export class Utils {
     static isAndroidOldSDK() {
         if (application.android && platform.device.sdkVersion < '21') {
             return true;
+        }
+        return false;
+    }
+
+    static hasPermanentMenuKey() {
+        if (application.android) {
+            let context = application.android.context;
+            return android.view.ViewConfiguration.get(context).hasPermanentMenuKey();
         }
         return false;
     }
