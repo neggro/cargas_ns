@@ -5,6 +5,26 @@ Page {
     color: #333;
 }
 
+ActionBar {
+    background-color: rgba(33, 33, 33, 0.2);
+    color: #fff;
+    /* size of the notification bar */
+    margin-top: 24;
+}
+
+Page.old-sdk ActionBar {
+    margin-top: 0;
+}
+
+NavigationButton {
+    color: #fff;
+}
+
+TextField {
+    padding: 10;
+    font-size: 13;
+}
+
 .icon {
    font-family: 'MaterialIcons';
    font-size: 24;
@@ -75,26 +95,6 @@ Page {
     background-image: url('res://d_6');
 }
 
-ActionBar {
-    background-color: rgba(33, 33, 33, 0.2);
-    color: #fff;
-    /* size of the notification bar */
-    margin-top: 24;
-}
-
-Page.old-sdk ActionBar {
-    margin-top: 0;
-}
-
-NavigationButton {
-    color: #fff;
-}
-
-TextField {
-    padding: 10;
-    font-size: 13;
-}
-
 RadSideDrawer {
     margin-top: -81;
     z-index: 99;
@@ -137,7 +137,6 @@ RadSideDrawer {
 .sideMenuStackLayout .text {
     color: rgba(0, 0, 0, .87);
     margin-left: 72;
-    /*padding-top: 4;*/
     vertical-align: center;
 }
 
@@ -146,15 +145,13 @@ RadSideDrawer {
 }
 
 .contentStackLayoutWrapper {
-    /*
-    * right now I don't know exactly how it works
-    * but this is because of the android system buttons
-    * TODO: investigate about this and what happens
-    *       with a device with physical buttons
-    */
-    margin-bottom: 50;
     /* fix above margin-top of entire RadSideDrawer */
     margin-top: 81;
+}
+
+/* add this class to devices without physical buttons */
+.virtual-buttons-container {
+    margin-bottom: 48;
 }
 
 .overview-container,
@@ -165,11 +162,28 @@ RadSideDrawer {
     border-color: #ccc;
     border-radius: 3;
     border-width: 1;
-    margin-bottom: 10;
+    margin-bottom: 15;
+}
+
+.overview-box-title {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 3;
+    color: #ffffff;
+    font-size: 16;
+    font-weight: bold;
+    padding: 10 15;
+}
+
+.overview-box-content {
+    padding: 15;
+}
+
+.settings-container {
+    margin-bottom: 0;
 }
 
 .settings-container StackLayout {
-    padding: 15;
+    padding: 20 15;
 }
 
 .profile-container {
@@ -192,12 +206,12 @@ RadSideDrawer {
     background-color: #33cd5f;
     border-color: #28a54c;
     color: #fff;
-    padding: 20;
+    padding: 24;
 }
 
 .error-btn {
     background-color: #CD3333;
     border-color: #A52828;
     color: #fff;
-    padding: 20;
+    padding: 24;
 }

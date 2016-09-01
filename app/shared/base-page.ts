@@ -43,5 +43,9 @@ export class BasePage implements OnInit {
         if (Utils.isAndroidOldSDK()) {
             this._page.className = this._page.className + ' old-sdk';
         }
+
+        if (!Utils.hasPermanentMenuKey()) {
+            this._page.className = this._page.className + ' virtual-buttons-container';
+        }
     }
 }

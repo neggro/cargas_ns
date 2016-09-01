@@ -13,9 +13,24 @@
                 <StackLayout class="contentStackLayout">
 
                     <StackLayout class="overview-container">
-                        <Label text="Last Refuel"></Label>
-                        <Label text="Content goes here"></Label>
+                        <StackLayout class="overview-box-title">
+                            <Label text="{{'LAST_REFUEL' | translate}}"></Label>
+                        </StackLayout>
+                        <StackLayout class="overview-box-content">
+                            <Label text="Content goes here"></Label>
+                        </StackLayout>
                     </StackLayout>
+
+                    <StackLayout class="overview-container">
+                        <StackLayout class="overview-box-title">
+                            <Label text="{{'TOTALS' | translate}}"></Label>
+                        </StackLayout>
+                        <StackLayout class="overview-box-content">
+                            <Label text="Totals content goes here"></Label>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <Button text="{{'ADD_NEW_REFUEL' | translate}}" class="success-btn"></Button>
 
                 </StackLayout>
             </ScrollView>
